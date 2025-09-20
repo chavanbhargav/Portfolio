@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chavan Bhargav HN - Personal Portfolio</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/profile.jpg"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/profile.jpg"
+              alt="Chavan Bhargav HN"
+              width="80"
+              style="border-radius: 15px;"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Chavan Bhargav HN">Chavan Bhargav HN</h1>
+            <p class="title">Senior Software Engineer (React Native)</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:cbhargav108@gmail.com" class="contact-link"
+                  >cbhargav108@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919538064657" class="contact-link"
+                  >+91 9538064657</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Bengaluru, Karnataka, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/chavan-bhargav-8b1754170/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://api.whatsapp.com/send/?phone=919538064657"
+                class="social-link"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="assets/Chavan_Bhargav_Resume.pdf"
+                class="social-link"
+                download="Chavan_Bhargav_Resume.pdf"
+                title="Download Resume"
+              >
+                <ion-icon name="download-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a <strong>React Native Engineer</strong> with over
+              <strong>5 years of experience</strong> building and scaling
+              high-performance mobile applications for both
+              <strong>iOS</strong> and <strong>Android</strong>.
+            </p>
+            <ul style="list-style-type: disc; margin-left: 20px; padding-left: 20px;">
+              <li><strong>Performance Optimization</strong> & Mobile Architecture</li>
+              <li><strong>Native Module Integrations</strong>, API handling, and OTA updates</li>
+              <li>Implementing <strong>Analytics SDKs</strong> (Firebase, CleverTap, AppsFlyer)</li>
+              <li>Agile team collaboration with <strong>CI/CD pipelines</strong></li>
+            </ul>
+            <p>
+              Delivered <strong>50+ white-label apps</strong> and enterprise
+              applications ensuring <strong>reliable experiences for 1M+ users</strong>.
+              Reduced crash rate by 40% and improved load time by 35%.
+            </p>
+          </section>
+        </article>
+
+        <!-- RESUME -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Engineering (Information Science)
+                </h4>
+                <span>Vemana Institute of Technology, Karnataka — 2018</span>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Software Engineer (React Native) – Sonata Software
+                </h4>
+                <span>Aug 2024 — Present | Bengaluru, India</span>
+                <p class="timeline-text">
+                  Major contributor to <strong>Pantaloons App (1M+ downloads)</strong> and
+                  ABFRL Super App, delivering new features, bug fixes, OTA updates,
+                  integrations (Maps, AWS S3, LimeChat, barcode/voice search, AEM, CleverTap).
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Software Engineer – Yugasys Software Pvt Ltd
+                </h4>
+                <span>Nov 2023 — Jul 2024 | Bengaluru, India</span>
+                <p class="timeline-text">
+                  Developed <strong>Engage To Elect</strong> (political engagement app) and
+                  <strong>Aavico Laundry Suite</strong> (multi-app solution), integrating
+                  geo-location, push notifications, analytics, file handling, and S3 migration.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer – Girmiti Software Pvt Ltd
+                </h4>
+                <span>Aug 2020 — Oct 2023 | Bengaluru, India</span>
+                <p class="timeline-text">
+                  Led development of <strong>SpringBig Loyalty Platform</strong>, deploying
+                  50+ white-label apps with 100% app store compliance, achieving a 30% rise in
+                  interactions and 25% boost in app ratings.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item"><h5>React Native</h5></li>
+              <li class="skills-item"><h5>iOS & Android Development</h5></li>
+              <li class="skills-item"><h5>Redux / Context API</h5></li>
+              <li class="skills-item"><h5>Firebase (Crashlytics, Messaging)</h5></li>
+              <li class="skills-item"><h5>AppsFlyer, CleverTap</h5></li>
+              <li class="skills-item"><h5>REST APIs</h5></li>
+              <li class="skills-item"><h5>CI/CD, CodePush OTA</h5></li>
+              <li class="skills-item"><h5>Jest Testing</h5></li>
+              <li class="skills-item"><h5>Git, Agile/Scrum</h5></li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- PROJECTS -->
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item active" data-category="react native">
+                <h3 class="project-title">Pantaloons (Android & iOS)</h3>
+              </li>
+              <li class="project-item active" data-category="react native">
+                <h3 class="project-title">ABFRL Super App</h3>
+              </li>
+              <li class="project-item active" data-category="react native">
+                <h3 class="project-title">Engage To Elect</h3>
+              </li>
+              <li class="project-item active" data-category="react native">
+                <h3 class="project-title">Aavico Laundry Suite</h3>
+              </li>
+              <li class="project-item active" data-category="react native">
+                <h3 class="project-title">SpringBig Loyalty Platform (50+ White-label Apps)</h3>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
