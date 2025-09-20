@@ -8,7 +8,7 @@
 
     <link
       rel="shortcut icon"
-      href="./assets/images/profile.jpg"
+      href="./assets/images/my-avatar.png"
       type="image/png"
     />
 
@@ -29,7 +29,7 @@
         <div class="sidebar-info">
           <figure class="avatar-box">
             <img
-              src="./assets/images/profile.jpg"
+              src="./assets/images/profile.png"
               alt="Chavan Bhargav HN"
               width="80"
               style="border-radius: 15px;"
@@ -130,43 +130,150 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link active" data-nav-link data-target="about">About</button>
             </li>
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+              <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
             </li>
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Projects</button>
+              <button class="navbar-link" data-nav-link data-target="projects">Projects</button>
             </li>
           </ul>
-        </nav>
+        </nav>        
 
         <!-- ABOUT -->
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+<article class="about active" data-page="about">
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
 
-          <section class="about-text">
-            <p>
-              I am a <strong>React Native Engineer</strong> with over
-              <strong>5 years of experience</strong> building and scaling
-              high-performance mobile applications for both
-              <strong>iOS</strong> and <strong>Android</strong>.
-            </p>
-            <ul style="list-style-type: disc; margin-left: 20px; padding-left: 20px;">
-              <li><strong>Performance Optimization</strong> & Mobile Architecture</li>
-              <li><strong>Native Module Integrations</strong>, API handling, and OTA updates</li>
-              <li>Implementing <strong>Analytics SDKs</strong> (Firebase, CleverTap, AppsFlyer)</li>
-              <li>Agile team collaboration with <strong>CI/CD pipelines</strong></li>
-            </ul>
-            <p>
-              Delivered <strong>50+ white-label apps</strong> and enterprise
-              applications ensuring <strong>reliable experiences for 1M+ users</strong>.
-              Reduced crash rate by 40% and improved load time by 35%.
-            </p>
-          </section>
-        </article>
+  <section class="about-text">
+    <div class="about-hero">
+      <div class="about-intro">
+        <h3 class="about-subtitle">Welcome to my digital space!</h3>
+        <p class="about-description">
+          I am a <span class="highlight">Senior React Native Engineer</span> with over
+          <span class="highlight">5+ years of experience</span> crafting exceptional mobile experiences
+          that reach millions of users across <span class="highlight">iOS</span> and 
+          <span class="highlight">Android</span> platforms.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Apps Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1M+</div>
+          <div class="stat-label">Users Impacted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40%</div>
+          <div class="stat-label">Crash Rate Reduction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">35%</div>
+          <div class="stat-label">Performance Improvement</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expertise-section">
+      <h4 class="expertise-title">My Expertise</h4>
+      <div class="expertise-grid">
+        <div class="expertise-item">
+          <div class="expertise-icon">🏗️</div>
+          <h5>Mobile Architecture</h5>
+          <p>Designing scalable and maintainable mobile app architectures</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">⚡</div>
+          <h5>Performance Optimization</h5>
+          <p>Optimizing app performance for smooth user experiences</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">🔗</div>
+          <h5>Native Integration</h5>
+          <p>Seamless integration of native modules and APIs</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-icon">📊</div>
+          <h5>Analytics & Tracking</h5>
+          <p>Implementing comprehensive analytics solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-statement">
+      <blockquote class="quote">
+        <p>"Building mobile applications that not only meet user needs but exceed expectations, 
+        creating digital experiences that make a real impact in people's daily lives."</p>
+      </blockquote>
+    </div>
+
+    <div class="tech-highlights">
+      <h4 class="tech-title">Technologies I Love Working With</h4>
+      <div class="tech-tags">
+        <span class="tech-tag react-native">React Native</span>
+        <span class="tech-tag typescript">TypeScript</span>
+        <span class="tech-tag firebase">Firebase</span>
+        <span class="tech-tag redux">Redux</span>
+        <span class="tech-tag native">Native Modules</span>
+        <span class="tech-tag ci">CI/CD</span>
+        <span class="tech-tag testing">Jest Testing</span>
+        <span class="tech-tag git">Git & Agile</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE SECTION -->
+  <section class="service">
+    <h3 class="h3 service-title">What I'm doing</h3>
+
+    <ul class="service-list">
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Mobile apps</h4>
+          <p class="service-item-text">
+            Designing and developing powerful, intuitive mobile applications for iOS and Android platforms.
+            Optimized for speed, performance, and user engagement to deliver exceptional experiences.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- MODAL CONTAINER (Optional Testimonials) -->
+      <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="./assets/images/profile.jpg" alt="Chavan" width="80" data-modal-img />
+            </figure>
+            <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+          </div>
+
+          <div class="modal-content">
+            <h4 class="h3 modal-title" data-modal-title></h4>
+            <time datetime="2025-09-20"></time>
+            <div data-modal-text>
+              <p></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
 
         <!-- RESUME -->
         <article class="resume" data-page="resume">
@@ -239,15 +346,95 @@
           <section class="skill">
             <h3 class="h3 skills-title">My skills</h3>
             <ul class="skills-list content-card">
-              <li class="skills-item"><h5>React Native</h5></li>
-              <li class="skills-item"><h5>iOS & Android Development</h5></li>
-              <li class="skills-item"><h5>Redux / Context API</h5></li>
-              <li class="skills-item"><h5>Firebase (Crashlytics, Messaging)</h5></li>
-              <li class="skills-item"><h5>AppsFlyer, CleverTap</h5></li>
-              <li class="skills-item"><h5>REST APIs</h5></li>
-              <li class="skills-item"><h5>CI/CD, CodePush OTA</h5></li>
-              <li class="skills-item"><h5>Jest Testing</h5></li>
-              <li class="skills-item"><h5>Git, Agile/Scrum</h5></li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React Native</h5>
+                  <data value="95">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">iOS & Android Development</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Redux / Context API</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Firebase (Crashlytics, Messaging)</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AppsFlyer, CleverTap</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">REST APIs</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CI/CD, CodePush OTA</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Jest Testing</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git, Agile/Scrum</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
             </ul>
           </section>
         </article>
@@ -257,22 +444,71 @@
           <header>
             <h2 class="h2 article-title">Projects</h2>
           </header>
-          <section class="projects">
+          <section class="project-section">
             <ul class="project-list">
               <li class="project-item active" data-category="react native">
-                <h3 class="project-title">Pantaloons (Android & iOS)</h3>
+                <a href="#" class="project-link">
+                  <figure class="project-img">
+                    <img src="./assets/images/pt.jpg" alt="Pantaloons App" loading="lazy">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">Pantaloons (Android & iOS)</h3>
+                  <p class="project-category">React Native</p>
+                </a>
               </li>
+
               <li class="project-item active" data-category="react native">
-                <h3 class="project-title">ABFRL Super App</h3>
+                <a href="#" class="project-link">
+                  <figure class="project-img">
+                    <img src="./assets/images/allen-solly.png" alt="ABFRL Super App" loading="lazy">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">ABFRL Super App</h3>
+                  <p class="project-category">React Native</p>
+                </a>
               </li>
+
               <li class="project-item active" data-category="react native">
-                <h3 class="project-title">Engage To Elect</h3>
+                <a href="#" class="project-link">
+                  <figure class="project-img">
+                    <img src="./assets/images/eTe.png" alt="Engage To Elect App" loading="lazy">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">Engage To Elect</h3>
+                  <p class="project-category">React Native</p>
+                </a>
               </li>
+
               <li class="project-item active" data-category="react native">
-                <h3 class="project-title">Aavico Laundry Suite</h3>
+                <a href="#" class="project-link">
+                  <figure class="project-img">
+                    <img src="./assets/images/aavico.png" alt="Aavico Laundry Suite" loading="lazy">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">Aavico Laundry Suite</h3>
+                  <p class="project-category">React Native</p>
+                </a>
               </li>
+
               <li class="project-item active" data-category="react native">
-                <h3 class="project-title">SpringBig Loyalty Platform (50+ White-label Apps)</h3>
+                <a href="#" class="project-link">
+                  <figure class="project-img">
+                    <img src="./assets/images/zenLeaf.png" alt="SpringBig Loyalty Platform" loading="lazy">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">SpringBig Loyalty Platform (50+ White-label Apps)</h3>
+                  <p class="project-category">React Native</p>
+                </a>
               </li>
             </ul>
           </section>
